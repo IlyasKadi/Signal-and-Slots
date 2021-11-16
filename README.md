@@ -18,7 +18,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
          <ul>
-            <li><a href="#getting-started">getting started</a></li>
+            <a href="#getting-started">getting started</a>
          </ul>
        <a href="#Calculator">Calculator</a>
             <ul>
