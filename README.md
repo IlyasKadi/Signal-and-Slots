@@ -30,7 +30,7 @@
                <li><a href="#Enter-Button">Enter Button</a></li>
                <li><a href="#Enhancements">Enhancements</a></li>       
             </ul>
-      <a href="#Traffic-Light">Traffic Light</a>
+      <li><a href="#Traffic-Light">Traffic Light</a></li>
     </li>
   </ol>
 </details>
