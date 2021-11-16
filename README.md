@@ -97,7 +97,6 @@ To get a local copy up and running follow these simple example steps.
 <!-- Operation-Interaction -->
 ## Operation-Interaction
 
-Enhancements
 
 
 
@@ -112,13 +111,13 @@ Enhancements
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+
 <!-- Enhancements -->
 ## Enhancements
 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 
