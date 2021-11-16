@@ -16,9 +16,9 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      </li><a href="#about-the-project">About The Project</a></li>
+      <li><a href="#about-the-project">About The Project</a></li>
          <ul>
-            </li><a href="#getting-started">getting started</a></li>
+            <li><a href="#getting-started">getting started</a></li>
          </ul>
        <li><a href="#Calculator">Calculator</a></li>
             <ul>
