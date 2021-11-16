@@ -17,10 +17,10 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#getting-started">getting started</a></li>
-      </ul>
-        <li><a href="#Calculator">Calculator</a></li>
+         <ul>
+            <li><a href="#getting-started">getting started</a></li>
+         </ul>
+       <li><a href="#Calculator">Calculator</a></li>
             <ul>
                <li><a href="#Setup">Setup</a></li>
                <li><a href="#Custom-Slots">Custom Slots</a></li>
@@ -30,7 +30,7 @@
                <li><a href="#Enter-Button">Enter Button</a></li>
                <li><a href="#Enhancements">Enhancements</a></li>       
             </ul>
-        <li><a href="#Traffic-Light">Traffic Light</a></li>
+      <li><a href="#Traffic-Light">Traffic Light</a></li>
     </li>
   </ol>
 </details>
