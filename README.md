@@ -16,19 +16,19 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      </li><a href="#about-the-project">About The Project</a></li>
          <ul>
-            <a href="#getting-started">getting started</a>
+            </li><a href="#getting-started">getting started</a></li>
          </ul>
        <li><a href="#Calculator">Calculator</a></li>
             <ul>
-                <a href="#Setup">Setup</a>
-                <a href="#Custom-Slots">Custom Slots</a>
-                <a href="#Digits-Interaction">Digits Interaction</a>
-                <a href="#Integer-numbers">Integer numbers</a>
-                <a href="#Operation-Interaction">Operation Interaction</a>
-                <a href="#Enter-Button">Enter Button</a>
-                <a href="#Enhancements">Enhancements</a>      
+                <li><a href="#Setup">Setup</a></li>
+                <li><a href="#Custom-Slots">Custom Slots</a></li>
+                <li><a href="#Digits-Interaction">Digits Interaction</a></li>
+                <li><a href="#Integer-numbers">Integer numbers</a></li>
+                <li><a href="#Operation-Interaction">Operation Interaction</a></li>
+                <li><a href="#Enter-Button">Enter Button</a></li>
+                <li><a href="#Enhancements">Enhancements</a></li>
             </ul>
        <li><a href="#Traffic-Light">Traffic Light</a></li>
     </li>
