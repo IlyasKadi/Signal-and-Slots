@@ -66,6 +66,33 @@ This exercise follows up to add **interactive** functionality to the **calculato
 <!-- Setup -->
 ## Setup
 
+In the **starter project** [Callcultaor.zip]() . You’ll find a Qt project to that create the main widget as a custom class.
+
+   - Configure and Run the project. You should see a main widget with the calculator buttons.
+
+   - **Investigate** the header file calculator.h to get a clear idea about the *attributes** of the class.
+
+   - You should special attention to the following attributes:
+        1. `QVector<QPushButton*> digits` which store a pointer to each digit.
+        2. `QVector<QPUshButton*> opertions` same but for the operations buttons.
+        3. `QPushButton *enter` the enter button.
+
+   > For now our application has no **reactivity**. The goal of the rest of the section is to obtain `step/step` a fully functional widget.
+
+In order to have a computing functionality, we will represent any mathematical operation by:
+
+`left   (op)  right`
+
+where `(op)` is one of the following allowed operation `+ - * /`.
+
+Hence we will add the following private members to our class `calculator.h`.
+
+```cpp
+private:
+    int * left;          //left operand
+    int * right;         // right operand
+    QString *operation;  // Pointer on the current operation
+```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
