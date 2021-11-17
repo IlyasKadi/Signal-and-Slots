@@ -19,9 +19,9 @@
          <ul>
             <li><a href="#getting-started">getting started</a></li>
          </ul>
-        <li> <a href="#Calculator">Calculator</a></li>
+        <li><a href="#Calculator">Calculator</a></li>
             <ul>
-               <a href="#Setup">Setup</a></li>
+               <a href="#Setup">Setup</a>
                <a href="#Custom-Slots">Custom Slots</a>
                <a href="#Digits-Interaction">Digits Interaction</a>
                <a href="#Integer-numbers">Integer numbers</a>
