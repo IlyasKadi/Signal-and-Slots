@@ -21,13 +21,13 @@
          </ul>
         <li><a href="#Calculator">Calculator</a></li>
             <ul>
-               <a href="#Setup">Setup</a>
-               <a href="#Custom-Slots">Custom Slots</a>
-               <a href="#Digits-Interaction">Digits Interaction</a>
-               <a href="#Integer-numbers">Integer numbers</a>
-               <a href="#Operation-Interaction">Operation Interaction</a>
-               <a href="#Enter-Button">Enter Button</a>
-               <a href="#Enhancements">Enhancements</a>
+               <a href="#Setup">Setup</a></li>
+               <a href="#Custom-Slots">Custom Slots</a></li>
+               <a href="#Digits-Interaction">Digits Interaction</a></li>
+               <a href="#Integer-numbers">Integer numbers</a></li>
+               <a href="#Operation-Interaction">Operation Interaction</a></li>
+               <a href="#Enter-Button">Enter Button</a></li>
+               <a href="#Enhancements">Enhancements</a></li>
             </ul>
         <li><a href="#Traffic-Light">Traffic Light</a></li> 
   </ol>
