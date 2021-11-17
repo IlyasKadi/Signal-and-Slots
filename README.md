@@ -15,7 +15,6 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
         <a href="#about-the-project">About The Project</a>
          <ul>
             <li><a href="#getting-started">getting started</a></li>
@@ -31,7 +30,7 @@
                 <li><a href="#Enhancements">Enhancements</a></li>
             </ul>
        <a href="#Traffic-Light">Traffic Light</a></li>
-    </li>
+ 
   </ol>
 </details>
 
