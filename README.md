@@ -62,8 +62,10 @@ This exercise follows up to add **interactive** functionality to the **calculato
      <img src="images/calculator.png">
    </p> 
   
-  > Preview of our basic Calculator 
- 
+  >  Calculator 
+  
+ > NOTE: We initialize left by 0 so if you perform an operation before adding the left, it will be assigined by default (0).
+
  .Header
 ```cpp
 class Calculator : public QWidget
@@ -105,7 +107,6 @@ private:
 ```
    
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 
@@ -237,10 +238,54 @@ void Calculator::changeOperation()
 <!-- Enter-Button -->
 ## Enter-Button
 
-The final touch is left to you, You should implement the `slot` for the enter button to compute the result of combining the left and right value according to the operation.!!
+1. We named the function for enter button  (```cpp showresults() ```), where all the four operations are made 
+> NOTE: for the division if you divid any number by 0 it will gives an ERROR (Err) in the LCDnumber.
+
+```cpp
+void Calculator::showresults()
+{
+    //getting the sender
+    auto button = dynamic_cast<QPushButton*>(sender());
+
+    //getting the value
+    enter = new QPushButton{button};
+
+     if(operation== QString{"+"})
+    {
+        disp->display(*left + *right);
+        *left=*left + *right;
+        *right=0;
+
+    }
+    else if(operation== QString{"-"})
+    {
+        disp->display(*left - *right);
+        *left=*left - *right;
+         *right=0;
+    }
+    else if(operation== QString{"/"})
+    {
+         if(*right==0)
+         {
+             disp->display("err");
+         }
+         else
+         {
+             disp->display(*left / *right);
+             *left=*left / *right;
+              *right=0;
+         }
+    }
+    else if(operation== QString{"*"})
+    {
+        disp->display(*left * *right);
+        *left=*left * *right;
+         *right=0;
+    }
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- Enhancements -->
