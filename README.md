@@ -294,7 +294,18 @@ void Calculator::showresults()
 Our calculator is quite basic, you could enhance his capabilities by:
 
    - Adding the reset button (C).
+
+
    - Adding the three or more operand such as (24 * 23 + 23)!
+```cpp
+     if(operation== QString{"+"})
+    {
+        disp->display(*left + *right);
+        *left=*left + *right;
+        *right=0;
+
+    }
+```
    - Add a set of operations ( Left that to your creativity!)
 
 
