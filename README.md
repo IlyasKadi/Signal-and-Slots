@@ -337,9 +337,12 @@ Simulating Traffic Light using Radio Buttons
 
    2. Investigate the code in order to underhand each component of the `TrafficLight` class.
 
-   3. Your task is add some functions in order to change `each 3 sedonds` in the following order:
+   3. let's add some functions in order to : 
+    A. change `each 3 seconds` in the following order:
+`Red -> Green -> Yellow`
+    B. change to yellow `each 4 seconds`, to green `each 1 seconds`, to red `each 2 seconds`
+    C. set lights by keyboard.
 
- `Red -> Green -> Yellow`
 
  .Header
 ```cpp
@@ -369,16 +372,42 @@ private:
 };
 
 ```
-
-
+A. 
 ```cpp
+void TrafficLight::placeWidgets()
+{
+
+  // Placing the widgets
+  auto layout = new QVBoxLayout;
+
+  layout->addWidget(redlight);
+  layout->addWidget(yellowlight);
+  layout->addWidget(greenlight);
+
+  lights.append(redlight);
+  lights.append(greenlight);
+  lights.append(yellowlight);
+
+  setLayout(layout);
+  startTimer(3000);
+
+    index=0;
+
+}
 void TrafficLight::timerEvent(QTimerEvent *e)
 {
 //TURN RED ...   TURN YELLOW ...  TURN GREE ...
-//    index= (index + 1 )%3;
-//    lights[index]->toggle();
+    index= (index + 1 )%3;
+    lights[index]->toggle();
+}
+```
 
 
+
+B.
+```cpp
+void TrafficLight::timerEvent(QTimerEvent *e)
+{
 
 //TURN RED ....  TURN YELLOW .    TURN GREE ..
     currentTime++;
@@ -401,6 +430,10 @@ void TrafficLight::timerEvent(QTimerEvent *e)
 
 
 }
+```
+C.
+
+```cpp
 void TrafficLight::keyPressEvent(QKeyEvent *event)
 {
 
