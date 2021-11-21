@@ -528,7 +528,7 @@ void Digitalclock::timerEvent(QTimerEvent *e)
 ```
 
 <div align="center">
-    <img src="images/Digitalclock.png" width="350" height="300">
+    <img src="images/Digitalclock.png" width="600" height="300">
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
