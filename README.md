@@ -295,6 +295,23 @@ Our calculator is quite basic, you could enhance his capabilities by:
 
    - Adding the reset button (C).
 
+```cpp
+void Calculator::resetall()
+{
+    auto button = dynamic_cast<QPushButton*>(sender());
+
+    //getting the value
+    reset = new QPushButton{button};
+
+    //resetting the pointers
+    *left=0;
+    right=nullptr;
+    operation=nullptr;
+
+    //display when resetting(0)
+    disp->display(0);
+}
+```
 
    - Adding the three or more operand such as (24 * 23 + 23)!
 ```cpp
