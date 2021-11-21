@@ -238,7 +238,7 @@ void Calculator::changeOperation()
 <!-- Enter-Button -->
 ## Enter-Button
 
-1. We named the function for enter button  (```cpp showresults() ```), where all the four operations are made 
+1. We named the function for enter button  (```showresults()```), where all the four operations are made 
 > NOTE: for the division if you divid any number by 0 it will gives an ERROR (Err) in the LCDnumber.
 
 ```cpp
@@ -291,7 +291,7 @@ void Calculator::showresults()
 <!-- Enhancements -->
 ## Enhancements
 
-Our calculator is quite basic, you could enhance his capabilities by:
+  We named the function for AC button  (`resetall()`), where we reset the pointers right  and operation to `nullptr` and left to 0 and as 0 a display for the LCDnum 
 
    - Adding the reset button (C).
 
