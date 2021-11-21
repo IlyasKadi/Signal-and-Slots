@@ -75,7 +75,7 @@ In the **starter project** [Callcultaor.zip]() . You’ll find a Qt project to t
 
    - Configure and Run the project. You should see a main widget with the calculator buttons.
 
-   - **Investigate** the header file calculator.h to get a clear idea about the *attributes** of the class.
+   - **Investigate** the header file calculator.h to get a clear idea about the \*attributes\** of the class.
 
    - You should special attention to the following attributes:
         1. `QVector<QPushButton*> digits` which store a pointer to each digit.
