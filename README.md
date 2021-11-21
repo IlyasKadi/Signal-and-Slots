@@ -522,7 +522,10 @@ void Digitalclock::timerEvent(QTimerEvent *e)
     seconds->display(T.second());
 }
 ```
-![Traffic_light](images/traffic_light.gif)
+<div align="center">
+    <img src="images/images/traffic_light.gif" alt="gif" width="550" height="380">
+</div>
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
