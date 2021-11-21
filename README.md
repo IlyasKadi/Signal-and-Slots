@@ -65,6 +65,8 @@ This exercise follows up to add **interactive** functionality to the **calculato
    </p> 
   
   > Preview of our basic Calculator 
+ 
+ .Header
 ```cpp
 class Calculator : public QWidget
 {
