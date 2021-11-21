@@ -523,7 +523,7 @@ void Digitalclock::timerEvent(QTimerEvent *e)
 }
 ```
 <div align="center">
-    <img src="images/images/traffic_light.gif" width="550" height="380">
+    <img src="images/images/traffic_light.gif" >
 </div>
 
 
