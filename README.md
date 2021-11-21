@@ -339,9 +339,7 @@ Simulating Traffic Light using Radio Buttons
 
    3. let's add some functions in order to : 
    
-   A. change `each 3 seconds` in the following order: 
-    
-        `Red -> Green -> Yellow`
+   A. change `each 3 seconds` in the following order: `Red -> Green -> Yellow`
 
    B. change to yellow `each 4 seconds`, to green `each 1 seconds`, to red `each 2 seconds`
     
