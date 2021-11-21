@@ -23,9 +23,12 @@
       </li>
         <li><a href="#Calculator">Calculator</a>
             <ul>            
-               <li><a href="#Digits-Interaction">Digits Interaction</a></li>
-               <li><a href="#Integer-numbers">Integer numbers</a></li>
-               <li><a href="#Operation-Interaction">Operation Interaction</a></li>
+               <li><a href="#Interactions">Digits Interaction</a></li>
+                    <ul>
+                       <li><a href="#Connections">Integer numbers</a></li>
+                       <li><a href="#Integers-Interaction">Integers-Interaction</a></li>
+                       <li><a href="#Operation-Interaction">Operation-Interaction</a></li>
+                   </ul>  
                <li><a href="#Enter-Button">Enter Button</a></li>
                <li><a href="#Enhancements">Enhancements</a></li>
             </ul>
@@ -111,42 +114,39 @@ private:
 
 
 <!-- Digits-Interaction -->
-## Digits-Interaction
+## Interactions
 
-The idea of this new connexion, it to connect **all the button** to this slot. This function will use the `Sender` method to get the identity of which button was clicked and act accordingly.
-
-   1. Hence we will add the connect the connect all the digits buttons to this slot.
-
+### Connections
+  1. We will add the connections of  the digits, operatoins, enter_buttons, and the reset_button.
+   
 ```cpp
+void Calculator::makeConnexions()
+{
      //Connecting the digits
      for(int i=0; i <10; i++)
-         connect(digits[i], &QPushButton::clicked, 
+         connect(digits[i], &QPushButton::clicked,
                  this, &Calculator::newDigit);
+
+     //Connecting the operations
+     for(int i=0; i <4; i++)
+         connect(operations[i], &QPushButton::clicked,
+                 this, &Calculator::changeOperation);
+
+     //Connecting the enter_button
+     connect(enter, &QPushButton::clicked,
+             this, &Calculator::showresults);
+
+     //Connecting the reset_button
+     connect(reset, &QPushButton::clicked,
+             this, &Calculator::resetall);
+}
 ```
+### Integers-Interaction 
+
    2. Now, we will implement the newDigit slot to show the digit in the LCDNumber.
-
-```cpp
-    //Getting the identity of the button using dynamic_cast
-    auto button  = dynamic_cast<QPushButton*>(sender());
-
-    // Each button has his own digit in the text
-    auto value = button->text()->toInt();
-
-    //Displaying the digit
-    disp->display(value);
-```
-Now each time, you will click on a button, his digit will be **shown** in the LCDNumber.
-
- > Make sure this step is working as it is the crucial part in the project.
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- Integer-numbers -->
-## Integer-numbers
-
-Now that we can react to each digit, it is time to correctly implement the `newDigit` slot. We should clarify two points to clearly understand the implementation:
-
+    
+   We should clarify two points to clearly understand the implementation:
+   
   - Which number, should be constructing `left` or `right`
 
       > The response to this question is easy, If we have an operation, then we already have our **left operand** and we should focus on the right.
@@ -157,7 +157,6 @@ Now that we can react to each digit, it is time to correctly implement the `newD
 
       `*left = (*left) * 10 + digit`
 
-Here is the full implementation of this function using the mentioned details:
 
 ```cpp
 void Calculator::newDigit( )
@@ -192,14 +191,12 @@ void Calculator::newDigit( )
 }
 ```
 
-Test your application with this code, you should see you number forming by clicking on the digits.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- Operation-Interaction -->
-## Operation-Interaction
+
+### Operation-Interaction
 
 Now we will move on the `operation` of the four buttons. We will the same mechanism using the `sender` method. Hence we will define a single slot to handle the click on the operations buttons:
 
