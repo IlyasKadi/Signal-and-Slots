@@ -310,7 +310,7 @@ void Calculator::resetall()
 ```
 
    - Adding the three or more operand such as (24 * 23 + 23)!
-   - > NOTE: Each time when you perform an operation left will take the result (as a memory) check out the [`showresults()`](##Enter-Button) function
+   - > NOTE: Each time when you perform an operation left will take the result (as a memory) check out the [`showresults()`](#Enter-Button) function
 ```cpp
     {
         disp->display(*left (op) *right);
