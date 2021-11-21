@@ -292,7 +292,6 @@ void Calculator::showresults()
 ## Enhancements
 
   We named the function for AC button  `resetall()`, where we reset the pointers right  and operation to `nullptr` and left to 0 and 0 as a display for the LCDnum. 
-
    - Adding the reset button (C).
 
 ```cpp
@@ -314,11 +313,12 @@ void Calculator::resetall()
 ```
 
    - Adding the three or more operand such as (24 * 23 + 23)!
+   - > NOTE: Each time when you perform an operation left will take the result (as a memory)
 ```cpp
-     if(operation== QString{"+"})
     {
-        disp->display(*left + *right);
-        *left=*left + *right;
+        disp->display(*left (op) *right);
+        //left as memo
+        *left=*left (op) *right;
         *right=0;
 
     }
