@@ -23,7 +23,7 @@
       </li>
         <li><a href="#Calculator">Calculator</a>
             <ul>            
-               <li><a href="#Interactions">Digits Interaction</a></li>
+               <li><a href="#Interactions">Interaction</a></li>
                     <ul>
                        <li><a href="#Connections">Connections</a></li>
                        <li><a href="#Integers-Interaction">Integers-Interaction</a></li>
