@@ -468,6 +468,10 @@ void TrafficLight::keyPressEvent(QKeyEvent *event)
 }
 ```
 
+<div align="center">
+    <img src="images/traffic_light.gif" width="350" height="300">
+</div>
+
 # Digital-clock
 
 .Header
@@ -522,10 +526,10 @@ void Digitalclock::timerEvent(QTimerEvent *e)
     seconds->display(T.second());
 }
 ```
-<div align="center">
-    <img src="images/traffic_light.gif" width="350" height="300">
-</div>
 
+<div align="center">
+    <img src="images/Digitalclock.gif" width="350" height="300">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
