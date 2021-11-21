@@ -310,7 +310,7 @@ void Calculator::resetall()
 ```
 
    - Adding the three or more operand such as (24 * 23 + 23)!
-   - > NOTE: Each time when you perform an operation left will take the result (as a memory) check out the [`showresults()`](## Enter-Button) function
+   - > NOTE: Each time when you perform an operation left will take the result (as a memory) check out the [`showresults()`](##Enter-Button) function
 ```cpp
     {
         disp->display(*left (op) *right);
@@ -341,6 +341,96 @@ Simulating Traffic Light using Radio Buttons
 
  `Red -> Green -> Yellow`
 
+ .Header
+```cpp
+class TrafficLight: public QWidget{
+  Q_OBJECT
+
+public:
+
+  TrafficLight(QWidget * parent = nullptr);
+  void timerEvent(QTimerEvent *e) override;
+  void keyPressEvent(QKeyEvent *event) override;
+
+protected:
+     void createWidgets();
+     void placeWidgets();
+
+
+private:
+  int index=0;
+  int times[3]={4,1,2};
+  int currentTime;
+  QVector<QRadioButton*> lights ;
+  QRadioButton * redlight;
+  QRadioButton * yellowlight;
+  QRadioButton * greenlight;
+
+};
+
+```
+
+
+```cpp
+void TrafficLight::timerEvent(QTimerEvent *e)
+{
+//TURN RED ...   TURN YELLOW ...  TURN GREE ...
+//    index= (index + 1 )%3;
+//    lights[index]->toggle();
+
+
+
+//TURN RED ....  TURN YELLOW .    TURN GREE ..
+    currentTime++;
+
+    if(redlight->isChecked()&& currentTime==4)
+    {
+        yellowlight->toggle();
+        currentTime=0;
+    }
+    if(yellowlight->isChecked()&& currentTime==1)
+    {
+        greenlight->toggle();
+        currentTime=0;
+    }
+    if(greenlight->isChecked()&& currentTime==2)
+    {
+        redlight->toggle();
+        currentTime=0;
+    }
+
+
+}
+void TrafficLight::keyPressEvent(QKeyEvent *event)
+{
+
+// PRESS R for (red)
+
+    if(event->key()==Qt::Key_R)
+    {
+        index=0;
+        redlight->toggle();
+    }
+
+
+
+//PRESS Y for (yellow)
+
+    if(event->key()==Qt::Key_Y)
+     {
+            index=1;
+            yellowlight->toggle();
+     }
+
+
+//PRESS G for (green)
+     if(event->key()==Qt::Key_G)
+     {
+         index=1;
+         greenlight->toggle();
+     }
+}
+```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
