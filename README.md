@@ -58,7 +58,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- Calculator -->
 # Calculator
 
-This exercise follows up to add **interactive** functionality to the **calculator** widgets written in the previous homework. The goal is to use [Signals and Slots](https://doc.qt.io/qt-5/signalsandslots.html) to simulate a basic calculator behavior. The supported operations are `*, +, -, /`.
+This exercise follows up to add **interactive** functionality to the **calculator** widgets written in the previous homework. The goal is to use [Signals and Slots](https://doc.qt.io/qt-5/signalsandslots.html) to simulate a basic calculator behavior. The supported operations are`*, +, -, /`.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
