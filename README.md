@@ -323,8 +323,6 @@ void Calculator::resetall()
 
     }
 ```
-   - Add a set of operations ( Left that to your creativity!)
-
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
