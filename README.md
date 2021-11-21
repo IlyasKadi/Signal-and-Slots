@@ -25,7 +25,7 @@
             <ul>            
                <li><a href="#Interactions">Digits Interaction</a></li>
                     <ul>
-                       <li><a href="#Connections">Integer numbers</a></li>
+                       <li><a href="#Connections">Connections</a></li>
                        <li><a href="#Integers-Interaction">Integers-Interaction</a></li>
                        <li><a href="#Operation-Interaction">Operation-Interaction</a></li>
                    </ul>  
