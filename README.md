@@ -23,7 +23,6 @@
       </li>
         <li><a href="#Calculator">Calculator</a>
             <ul>            
-               <li><a href="#Custom-Slots">Custom Slots</a></li>
                <li><a href="#Digits-Interaction">Digits Interaction</a></li>
                <li><a href="#Integer-numbers">Integer numbers</a></li>
                <li><a href="#Operation-Interaction">Operation Interaction</a></li>
@@ -108,30 +107,6 @@ private:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- Custom-Slots -->
-## Custom-Slots
-
-Our first step is to respond to each **digit** click. But here we face a **classical problem** which to map multiple signals to the same slot. The slot has to behave **differently** according the which digit was pressed. This problem is thoroughly investigated in [J.Blanchette Blog](https://doc.qt.io/archives/qq/qq10-signalmapper.html).
-
-The trivial solution is to create a slot for each button, but that will be cumbersome.
-
-```cpp
-public slots:
-        void button0Clicked();
-        void button1Clicked();
-        ...
-        void button9Clicked();
-```
-**Custom Slot**.
-
-For our case, we will use the **Sender** approach which allow a slot to get the **identity** of the sender object. From that we could get which button was clicked. Hence we will define only one slot such as:
-
-```cpp
-public slots:
-   void newDigit();
-```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- Digits-Interaction -->
