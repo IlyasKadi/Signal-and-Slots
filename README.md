@@ -63,6 +63,8 @@ This exercise follows up to add **interactive** functionality to the **calculato
 <p align="center">
      <img src="images/Calculator.png">
    </p> 
+  
+  > Preview of our basic Calculator 
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
