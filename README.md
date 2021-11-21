@@ -67,7 +67,6 @@ This exercise follows up to add **interactive** functionality to the **calculato
   
   >  Calculator 
   
- > NOTE: We initialize left by 0 so if you perform an operation before adding the left, it will be assigined by default (0).
 
  .Header
 ```cpp
@@ -108,7 +107,8 @@ private:
 
 };
 ```
-   
+   > NOTE: We initialize left by 0 so if you perform an operation before adding the left, it will be assigined by default (0).
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
