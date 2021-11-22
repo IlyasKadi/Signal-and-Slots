@@ -537,7 +537,7 @@ void Digitalclock::timerEvent(QTimerEvent *e)
 
 
 
-
+>> Good job, You will be able to enhance your calculator once we present the notion of stacks in the **Data Structures** course.
 
 Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0)
 
@@ -546,3 +546,5 @@ Project Link: [Signal-and-Slots](https://github.com/IlyasKadi/Signal-and-Slots)
 Encadré par : [Mr.BELCAID-Anass](https://anassbelcaid.github.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
